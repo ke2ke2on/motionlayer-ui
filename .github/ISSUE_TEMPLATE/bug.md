@@ -1,5 +1,5 @@
 ---
-name: 버그
+name: 버그 신고
 about: 화면이 기대와 다르게 보이거나 동작할 때
 title: ''
 labels: bug
