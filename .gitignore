@@ -13,3 +13,6 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# Android Studio·IntelliJ IDEA 설정 폴더 (개인 설정이라 올리지 않는다)
+.idea/
