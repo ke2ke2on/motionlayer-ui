@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 화면은 전부 Compose가 그린다. 여기서는 앱이 뜨기 직전 잠깐 보이는 바탕색만 TV 화면 바탕(bg/grouped)과 맞춘다. -->
+    <style name="Theme.MotionLayerTv" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/tv_window_background</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+</resources>

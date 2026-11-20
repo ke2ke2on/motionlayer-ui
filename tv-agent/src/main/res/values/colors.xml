@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        XML(테마·아이콘)에서만 쓰는 색. 화면 코드는 폰 앱의 토큰(MotionTheme.colors)을 쓴다.
+        값은 폰 앱 ui/theme/Color.kt와 같아야 한다: bg/grouped, brand/primary, text/inverse.
+    -->
+    <color name="tv_window_background">#F2F4F6</color>
+    <color name="tv_brand_primary">#1F68D9</color>
+    <color name="tv_text_inverse">#FFFFFF</color>
+</resources>

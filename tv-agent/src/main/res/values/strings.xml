@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- TV 화면의 글자. 글은 Figma "21 TV" 그대로이고, "직접 정함"이라고 적은 것만 시안에 없다. -->
+    <string name="app_name">MotionLayer</string>
+
+    <!-- TV-01 처음 실행 -->
+    <string name="tv01_title">이 TV를 어떻게 쓸까요?</string>
+    <string name="tv01_subtitle">나중에 폰에서 바꿀 수 있어요.</string>
+    <string name="tv01_personal_title">개인 TV</string>
+    <string name="tv01_personal_body">한 사람이 주인이 돼요.\n집 밖에서도 폰으로 조작할 수 있어요.</string>
+    <string name="tv01_public_title">공용 TV</string>
+    <string name="tv01_public_body">누구나 \'이번만 연결\'로 써요.\n주인으로 등록할 수 없어요.</string>
+    <string name="tv01_hint">리모컨 방향키로 고르고 확인을 누르세요</string>
+
+    <!-- TV-02 QR 대기 -->
+    <string name="tv02_title">폰으로 QR을\n찍어 주세요</string>
+    <string name="tv02_step_1">폰에서 MotionLayer 열기</string>
+    <string name="tv02_step_2">기기 → 기기 추가 → QR 찍기</string>
+    <string name="tv02_step_3">등록하거나 이번만 연결</string>
+    <!-- 직접 정함: 공용 TV는 주인으로 등록할 수 없어 찍으면 바로 '이번만 연결'이 된다(TV-01 공용 카드 문구를 따름) -->
+    <string name="tv02_step_3_public">\'이번만 연결\'로 바로 써요</string>
+    <string name="tv02_code_note">60초마다 바뀌어요</string>
+    <string name="tv02_qr_description">연결용 QR 코드</string>
+
+    <!-- TV-03 연결 상태 -->
+    <string name="tv03_role_owner">주인</string>
+    <string name="tv03_role_guest">손님</string>
+    <string name="tv03_status_operating">지금 조작 중</string>
+    <string name="tv03_status_same_wifi">같은 와이파이</string>
+    <!-- 직접 정함: 시안에는 "지금 조작 중"과 "같은 와이파이"만 있다 -->
+    <string name="tv03_status_remote">밖에서 연결</string>
+    <!-- "주인 · 지금 조작 중" -->
+    <string name="tv03_person_detail">%1$s · %2$s</string>
+    <string name="tv03_footer">연결을 끊거나 설정을 바꾸려면 주인의 폰에서 할 수 있어요.</string>
+    <!-- 직접 정함: 공용 TV에는 주인이 없다 -->
+    <string name="tv03_footer_public">연결은 각자 폰에서 끊을 수 있어요.</string>
+    <!-- 직접 정함: 4명 이상이면 2명만 한 줄씩 그리고 나머지는 이 줄 하나로 묶는다. 아래 글은 이름을 " · "로 잇는다 -->
+    <string name="tv03_more_people">그 밖에 %1$d명</string>
+
+    <!-- TV-04 조작한 사람 표시: "민수 ▸ 다음 채널" -->
+    <string name="tv04_operator">%1$s ▸ %2$s</string>
+    <string name="tv_command_next_channel">다음 채널</string>
+    <!-- 직접 정함: 시안에는 "다음 채널" 하나뿐이다 -->
+    <string name="tv_command_previous_channel">이전 채널</string>
+    <string name="tv_command_volume_up">음량 올림</string>
+    <string name="tv_command_volume_down">음량 내림</string>
+    <string name="tv_command_input_switch">입력 전환</string>
+
+    <!-- TV-05 원격 조작 중 -->
+    <string name="tv05_remote">%1$s 님이 밖에서 조작하고 있어요</string>
+
+    <!-- TV-06 효과(PIP): "지수가 보낸 사진". %2$s는 조사(이/가) -->
+    <string name="tv06_sent_photo">%1$s%2$s 보낸 사진</string>
+    <!-- 직접 정함: 시안에는 사진만 있다 -->
+    <string name="tv06_sent_video">%1$s%2$s 보낸 영상</string>
+    <string name="tv06_closes_in">%1$d초 뒤 닫혀요</string>
+
+    <!-- 시연용 동작(디버그 빌드에서 리모컨 메뉴 키) -->
+    <string name="tv_demo_title">시연용 동작</string>
+</resources>

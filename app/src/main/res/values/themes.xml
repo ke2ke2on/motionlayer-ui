@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.MotionLayer" parent="android:Theme.Material.Light.NoActionBar">
+        <!-- 앱은 라이트 한 벌이다. 시스템이 색을 강제로 반전(강제 다크)하면 보고서 6.1의 명암비가 깨지므로 막는다(보고서 6.3). -->
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+</resources>

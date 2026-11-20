@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- TV 홈 화면의 앱 목록에 나오는 가로 그림(320 x 180). 파란 바탕 가운데에 흰 제스처 아이콘. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="320dp"
+    android:height="180dp"
+    android:viewportWidth="320"
+    android:viewportHeight="180">
+    <path
+        android:fillColor="@color/tv_brand_primary"
+        android:pathData="M0,0h320v180h-320z" />
+    <group
+        android:scaleX="4"
+        android:scaleY="4"
+        android:translateX="112"
+        android:translateY="42">
+        <path
+            android:pathData="M14.5 2H9.5C8.11929 2 7 3.11929 7 4.5V19.5C7 20.8807 8.11929 22 9.5 22H14.5C15.8807 22 17 20.8807 17 19.5V4.5C17 3.11929 15.8807 2 14.5 2Z"
+            android:strokeColor="@color/tv_text_inverse"
+            android:strokeWidth="2"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+        <path
+            android:pathData="M3.5 8C2.5 10.6 2.5 13.4 3.5 16"
+            android:strokeColor="@color/tv_text_inverse"
+            android:strokeWidth="2"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+        <path
+            android:pathData="M20.5 8C21.5 10.6 21.5 13.4 20.5 16"
+            android:strokeColor="@color/tv_text_inverse"
+            android:strokeWidth="2"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+    </group>
+</vector>
