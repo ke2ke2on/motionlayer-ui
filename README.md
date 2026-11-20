@@ -84,6 +84,8 @@ PC·TV 모듈은 폰 앱의 디자인 토큰과 공통 부품을 **빌드할 때
 .\gradlew.bat :tv-agent:testDebugUnitTest
 ```
 
+PR을 올리거나 `main`에 합치면 깃허브가 폰·TV 앱 빌드와 위 테스트를 자동으로 돌려요(`.github/workflows/ci.yml`). 결과는 PR 화면에 ✅·❌로 보이고, 실패한 테스트 이름도 함께 나와요.
+
 - 폰: 화면 코드에 색·숫자를 직접 쓰면 실패하는 디자인 규칙 검사(`DesignTokenRulesTest`), 한글 줄바꿈, 첫 실행 흐름 등
 - PC: 화면을 PNG로 그려 내는 테스트가 있어 `pc-agent/build/renders/`에서 Figma 시안과 비교할 수 있어요
 - TV: 어느 화면을 보일지, 연결된 사람이 많을 때 줄을 묶는 규칙 등
