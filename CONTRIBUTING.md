@@ -54,6 +54,8 @@
 
 ## PR 올리기 전 확인
 
+PR을 올리면 깃허브가 빌드와 테스트를 자동으로 돌려요. ❌가 나오면 고친 뒤에 합쳐요.
+
 - [ ] 바꾼 모듈의 빌드와 테스트가 통과한다
   - 폰: `.\gradlew.bat :app:testDebugUnitTest`
   - PC: `.\gradlew.bat :pc-agent:test`

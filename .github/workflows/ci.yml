@@ -1,0 +1,57 @@
+# PR과 main에 올릴 때마다 폰·TV·PC를 빌드하고 테스트한다.
+name: 빌드와 테스트
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+# 같은 PR에 새로 올리면 이전 검사는 멈춘다
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  checks: write # 실패한 테스트를 PR 화면에 표시하려고
+
+jobs:
+  build-and-test:
+    name: 빌드·테스트 (폰·TV·PC)
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: 코드 받기
+        uses: actions/checkout@v4
+
+      - name: JDK 21 준비
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+
+      - name: Gradle 준비 (캐시 포함)
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: 폰·TV 앱 빌드
+        run: ./gradlew :app:assembleDebug :tv-agent:assembleDebug
+
+      - name: 테스트 (폰·TV·PC)
+        run: ./gradlew :app:testDebugUnitTest :tv-agent:testDebugUnitTest :pc-agent:test --continue
+
+      - name: 테스트 결과를 PR에 표시
+        if: always()
+        uses: mikepenz/action-junit-report@v5
+        with:
+          report_paths: '**/build/test-results/**/*.xml'
+          check_name: 테스트 결과
+          require_tests: true
+
+      - name: PC 화면 그림 올리기 (Figma 비교용)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pc-renders
+          path: pc-agent/build/renders/
+          if-no-files-found: ignore
