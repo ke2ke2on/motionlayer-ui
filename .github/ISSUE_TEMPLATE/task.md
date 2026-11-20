@@ -1,5 +1,5 @@
 ---
-name: 작업
+name: 작업 이슈
 about: 화면·기능·문서처럼 할 일을 적는 이슈
 title: ''
 labels: ''
