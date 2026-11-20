@@ -102,3 +102,8 @@ PR을 올리거나 `main`에 합치면 깃허브가 폰·TV 앱 빌드와 위 �
 ## 화면 점검
 
 [docs/test-scenarios.md](docs/test-scenarios.md)에 폰·PC·TV 화면을 처음부터 끝까지 눌러 보는 점검표가 있어요. 버그를 적는 방법도 함께 있어요.
+
+## 라이선스
+
+- 코드는 [MIT 라이선스](LICENSE)를 따라요.
+- 앱에 들어 있는 글꼴 Noto Sans KR(`app/src/main/res/font/`)은 [SIL Open Font License 1.1](https://openfontlicense.org)을 따라요.
